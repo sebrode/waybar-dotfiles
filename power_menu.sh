@@ -6,7 +6,7 @@ chosen=$(echo -e "Lock\nLogout\nReboot\nShutdown" | wofi --show dmenu --prompt "
 # Execute the selected action
 case $chosen in
     Lock)
-        swaylock # Replace with your lock screen command
+        hyprlock #
         ;;
     Logout)
         hyprctl dispatch exit

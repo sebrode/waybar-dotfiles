@@ -2,15 +2,18 @@
     "layer": "top",
     "position": "top",
     "height": 24,
-    "modules-center": ["hyprland/workspaces", "custom/spotify"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-left": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock", "custom/power_menu"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "custom/spotify", "clock", "custom/power_menu"],
     
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": false,
+        "all-outputs": true,
         "format": "{name}",
-        "format-icons": {}
+    	"format-icons": {
+        	"current": "● {name}",
+        	"inactive": "{name}"
+        }
     },
     "tray": {
         "spacing": 10
