@@ -4,7 +4,7 @@
     "height": 24,
     "modules-center": ["hyprland/workspaces"],
     "modules-left": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "custom/spotify", "clock", "custom/power_menu"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "custom/spotify", "custom/hypridle_toggle", "clock", "custom/power_menu"],
     
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -61,8 +61,17 @@
         "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null",
         "exec-if": "pgrep spotify"
     },
+
+     "custom/hypridle_toggle": {
+        "format": "{}",
+        "exec": "/home/seb/.config/waybar/hypridle_status.sh",
+        "interval": 5,
+        "on-click": "/home/seb/.config/waybar/toggle_hypridle.sh",
+        "tooltip": "Toggle Hypridle",
+        },
+
     "custom/power_menu": {
-    "format": "", // Icon for power menu
+    "format": " ",
     "on-click": "~/.config/waybar/power_menu.sh"
     }
 

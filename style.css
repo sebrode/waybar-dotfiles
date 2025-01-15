@@ -54,6 +54,16 @@ button:hover {
   padding: 3px; /* Equal padding on all sides */
 }
 
+/* Add styles for the hypridle toggle button */
+#custom\/hypridle_toggle {
+    padding: 0 10px;
+    color: #ffffff; /* Default color */
+}
+
+#custom\/hypridle_toggle:hover {
+    background-color: @surface2;
+}
+
 
 
 #workspaces button.urgent {
