@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 
 # Display a menu
 chosen=$(echo -e "Lock\nLogout\nReboot\nShutdown" | wofi --show dmenu --prompt "Power Menu")

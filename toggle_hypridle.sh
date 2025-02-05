@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 
 # Path to hypridle executable
-HYPRIDLE_CMD="/usr/bin/hypridle"
+HYPRIDLE_CMD="/run/current-system/sw/bin/hypridle"
 
 # Log file for debugging (optional)
 LOG_FILE="$HOME/.config/waybar/hypridle_toggle.log"
